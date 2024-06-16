@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+<div class="bg-gray-500 min-h-screen text-white p-24">
+  <h1 class="text-2xl font-bold text-indigo-800">Hey 👋, {{ user.username }}  !</h1>
+  
+  <h1 class="text-2xl font-bold text-indigo-700">Welcome to eBill Submit!</h1>
+
+  <p class="text-xl text-indigo-200">
+    We're delighted to have you here. Managing your electric bill has never been
+    easier. <br>Our platform offers a seamless, efficient, and secure way to submit
+    and manage your electricity bills online.
+  </p>
+  <a href="{% url 'addBills' %}" class=" mt-8 inline-block px-4 py-2 bg-indigo-600 text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-indigo-700 hover:shadow-lg focus:bg-indigo-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-indigo-800 active:shadow-lg transition duration-150 ease-in-out">
+    Add Your Bill
+  </a>
+  
+</div>
+{% endblock %}
